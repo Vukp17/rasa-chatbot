@@ -1,0 +1,35 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+
+entities:
+  - name
+
+slots:
+  name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: name
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I help you today?"
+  utter_goodbye:
+    - text: "Goodbye!"
+  utter_ask_name:
+    - text: "What's your name?"
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_ask_name
+  - action_get_name
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

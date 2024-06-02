@@ -1,0 +1,37 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Hey
+- intent: goodbye
+  examples: |
+    - Bye
+    - Goodbye
+    - See you later
+- intent: affirm
+  examples: |
+    - Yes
+    - Sure
+    - Absolutely
+- intent: deny
+  examples: |
+    - No
+    - Not really
+    - I don't think so
+- intent: mood_great
+  examples: |
+    - I'm feeling great
+    - I'm awesome
+    - I'm on top of the world
+- intent: mood_unhappy
+  examples: |
+    - I'm sad
+    - I'm not feeling well
+    - I'm upset
+- intent: inform
+  examples: |
+    - My name is [John](name)
+    - I am [Sarah](name)
+    - Call me [Mike](name)
